@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lcareconstruction/static/css/main.af795cae.css",
+    "main.js": "/lcareconstruction/static/js/main.569f9487.js",
+    "static/js/453.3a295639.chunk.js": "/lcareconstruction/static/js/453.3a295639.chunk.js",
+    "index.html": "/lcareconstruction/index.html",
+    "main.af795cae.css.map": "/lcareconstruction/static/css/main.af795cae.css.map",
+    "main.569f9487.js.map": "/lcareconstruction/static/js/main.569f9487.js.map",
+    "453.3a295639.chunk.js.map": "/lcareconstruction/static/js/453.3a295639.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af795cae.css",
+    "static/js/main.569f9487.js"
+  ]
+}
