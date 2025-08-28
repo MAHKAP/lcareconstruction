@@ -26,14 +26,9 @@ const team = [
     image: '/team/leader2.jpg',
   },
   {
-    name: 'Sarah Johnson',
+    name: 'Sarang Jawale',
     position: 'Project Manager',
     image: '/team/leader3.jpg',
-  },
-  {
-    name: 'Michael Chen',
-    position: 'Lead Architect',
-    image: '/team/michael-chen.jpg',
   },
 ];
 

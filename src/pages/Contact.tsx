@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import {
   Box,
@@ -15,6 +16,7 @@ import { motion } from 'framer-motion';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import emailjs from 'emailjs-com';
 
 const MotionBox = motion(Box);
 
@@ -45,6 +47,33 @@ const Contact = () => {
     e.preventDefault();
     // Here you would typically handle the form submission to your backend
     console.log('Form submitted:', formData);
+    emailjs.send(
+      'service_td7ovmz', // replace with your EmailJS service ID
+      'template_ti1vt3w', // replace with your EmailJS template ID
+      formData,
+      'cjmN9823RhUbBG_Y3' // replace with your EmailJS user ID
+    ).then((response: any) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setSnackbar({
+        open: true,
+        message: 'Thank you for your message. We will get back to you soon!',
+        severity: 'success',
+      });
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+      });
+    }, (err: any) => {
+      console.log('FAILED...', err);
+      setSnackbar({
+        open: true,
+        message: 'Failed to send message. Please try again later.',
+        severity: 'error',
+      });
+    });
     setSnackbar({
       open: true,
       message: 'Thank you for your message. We will get back to you soon!',
@@ -188,9 +217,11 @@ const Contact = () => {
                           Address
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          123 Construction Ave
+                          Lane No. 339, Nandoshi Road,
                           <br />
-                          New York, NY 10001
+                          Near Kalpakruksh English Medium School,
+                          <br />
+                          Kirkatwadi, Pune - 411024
                         </Typography>
                       </Box>
                     </Box>
@@ -201,7 +232,7 @@ const Contact = () => {
                           Phone
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          (555) 123-4567
+                          +91 7775919098
                         </Typography>
                       </Box>
                     </Box>
@@ -212,7 +243,7 @@ const Contact = () => {
                           Email
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          info@constructpro.com
+                          info@lcareconstruction.co.in
                         </Typography>
                       </Box>
                     </Box>

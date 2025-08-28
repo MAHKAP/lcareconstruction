@@ -152,9 +152,9 @@ const Home = () => {
     <Grid container spacing={4} sx={{ mt: 4 }} justifyContent="center">
       {[
         { label: 'Projects Completed', value: 250 },
-        { label: 'Years of Experience', value: 18 },
+        { label: 'Years of Experience', value: 14 },
         { label: 'Skilled Workers', value: 100 },
-        { label: 'Cities Served', value: 10 },
+        { label: 'Cities Served', value: 5 },
       ].map((counter, index) => (
         <Grid item xs={6} md={3} key={index}>
           <MotionBox

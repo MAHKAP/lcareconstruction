@@ -4,6 +4,8 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -43,6 +45,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <FloatingWhatsApp />
         <Footer />
       </Router>
     </ThemeProvider>

@@ -75,7 +75,7 @@ const Footer = () => {
               Phone: +91 7775919088
             </Typography>
             <Typography variant="body2">
-              Email: lcareconstruction@hotmail.com
+              Email: info@lcareconstruction.co.in
             </Typography>
           </Box>
 
