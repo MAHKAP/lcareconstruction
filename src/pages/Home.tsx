@@ -31,7 +31,7 @@ const services = [
     icon: <ArchitectureIcon sx={{ fontSize: 60 }} />,
   },
   {
-    title: 'Infrastructure Development',
+    title: 'Infra Development',
     description: 'Roads, bridges, and public infrastructure projects.',
     icon: <EngineeringIcon sx={{ fontSize: 60 }} />,
   },{

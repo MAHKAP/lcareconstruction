@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -38,6 +39,7 @@ function App() {
       <CssBaseline />
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
