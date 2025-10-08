@@ -85,7 +85,7 @@ const Navbar = () => {
                 fontWeight: 700,
               }}
             >
-              L Care Construction Co.
+              L Care (Experts are There)
             </Typography>
           </Box>
           {isMobile ? (

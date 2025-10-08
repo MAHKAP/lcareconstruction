@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   Box,
+  Button,
   Container,
   Typography,
   Grid,
@@ -55,19 +57,6 @@ const services = [
       'Public transportation facilities',
       'Water and wastewater systems',
       'Energy infrastructure',
-    ],
-  },
-  {
-    title: 'Project Management',
-    description:
-      'Our comprehensive project management services ensure your construction project is completed on time and within budget.',
-    image: '/services/projectmanagement.jpg',
-    features: [
-      'Project planning and scheduling',
-      'Budget management',
-      'Quality control',
-      'Safety management',
-      'Contract administration',
     ],
   },
 ];
@@ -148,6 +137,17 @@ const Services = () => {
             Contact us today to discuss your construction needs and get a free
             consultation.
           </Typography>
+          <Box sx={{ textAlign: 'center', mt: 4 }}>
+                      <Button
+                        component={RouterLink}
+                        to="/contact"
+                        variant="contained"
+                        color="primary"
+                        size="large"
+                      >
+                        Contact Us
+                      </Button>
+                    </Box>
         </Container>
       </Box>
     </Box>

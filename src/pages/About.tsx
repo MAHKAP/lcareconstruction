@@ -25,11 +25,6 @@ const team = [
     position: 'CEO & Founder',
     image: '/team/leader2.jpg',
   },
-  {
-    name: 'Sarang Jawale',
-    position: 'Project Manager',
-    image: '/team/leader3.jpg',
-  },
 ];
 
 const values = [
@@ -84,7 +79,7 @@ const About = () => {
                 Our Story
               </Typography>
               <Typography variant="body1" paragraph>
-                Founded in 2006, L Care Construction Co. has grown from a small local
+                Founded in 2006, L Care has grown from a small local
                 contractor to one of the region's leading construction companies.
                 Our journey has been marked by a commitment to quality,
                 innovation, and customer satisfaction.

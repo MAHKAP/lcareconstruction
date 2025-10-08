@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Company Info */}
           <Box sx={{ flex: 1 }}>
             <Typography variant="h6" gutterBottom>
-              L Care Construction Co.
+              L Care (Experts are There)
             </Typography>
             <Typography variant="body2" sx={{ mb: 2 }}>
               Building excellence through innovation and dedication. Your trusted
@@ -63,7 +63,7 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }}>
-              Lane No. 339, Nandoshi Road
+              Address : Lane No. 339, Nandoshi Road
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }}>
               Near Kalpakruksh English Medium School
@@ -72,10 +72,10 @@ const Footer = () => {
               Kirkatwadi, Pune - 411024
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }}>
-              Phone: +91 7775919088
+              Phone : +91 9209508732
             </Typography>
             <Typography variant="body2">
-              Email: info@lcareconstruction.co.in
+              Email : lcareconstruction25@gmail.com
             </Typography>
           </Box>
 
@@ -121,7 +121,7 @@ const Footer = () => {
 
         <Box sx={{ textAlign: 'center' }}>
           <Typography variant="body2">
-            © {new Date().getFullYear()} L Care Construction All rights reserved.
+            © {new Date().getFullYear()} L Care,  All rights are reserved.
           </Typography>
         </Box>
       </Container>

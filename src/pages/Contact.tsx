@@ -232,7 +232,7 @@ const Contact = () => {
                           Phone
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          +91 7775919098
+                          +91 9209508732
                         </Typography>
                       </Box>
                     </Box>
@@ -243,7 +243,7 @@ const Contact = () => {
                           Email
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                          info@lcareconstruction.co.in
+                          lcareconstruction25@gmail.com
                         </Typography>
                       </Box>
                     </Box>

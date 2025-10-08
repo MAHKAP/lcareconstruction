@@ -34,10 +34,6 @@ const services = [
     title: 'Infra Development',
     description: 'Roads, bridges, and public infrastructure projects.',
     icon: <EngineeringIcon sx={{ fontSize: 60 }} />,
-  },{
-    title: 'Project Management',
-    description: 'Ensure your construction project is completed on time and within budget..',
-    icon: <TaskIcon sx={{ fontSize: 60 }} />,
   },
 ];
 
