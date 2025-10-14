@@ -2,7 +2,7 @@ import React from "react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp"; // Material UI Icon
 
 const FloatingWhatsApp: React.FC = () => {
-  const phoneNumber = "919960840933"; // replace with your number (with country code)
+  const phoneNumber = "917030573059"; // replace with your number (with country code)
   const message = "Hello, I would like to know more about your services!";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
