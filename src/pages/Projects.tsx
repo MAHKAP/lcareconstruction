@@ -221,6 +221,82 @@ const Projects = () => {
           </>
         )}
       </Dialog>
+      {/* Video Gallery Section */}
+<Box sx={{ bgcolor: 'grey.100', py: 8, mt: 6 }}>
+  <Container maxWidth="lg">
+    <Typography
+      variant="h4"
+      component="h2"
+      align="center"
+      gutterBottom
+      sx={{ fontWeight: 700, color: 'primary.main' }}
+    >
+      Project Video Gallery
+    </Typography>
+    <Typography
+      variant="body1"
+      align="center"
+      color="text.secondary"
+      sx={{ mb: 4 }}
+    >
+      Explore our ongoing and completed construction projects through visual stories.
+    </Typography>
+
+    <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: 3,
+      }}
+    >
+      {[
+        '/videos/video1.mp4',
+        '/videos/video2.mp4',
+        '/videos/video3.mp4',
+        '/videos/video4.mp4',
+        '/videos/video5.mp4',
+        '/videos/video6.mp4',
+      ].map((video, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.2 }}
+          viewport={{ once: true }}
+        >
+          <Card
+            sx={{
+              width: 320,
+              borderRadius: 2,
+              boxShadow: 4,
+              overflow: 'hidden',
+            }}
+          >
+            <Box
+              component="video"
+              src={video}
+              controls
+              muted
+              loop
+              sx={{
+                width: '100%',
+                height: 200,
+                objectFit: 'cover',
+              }}
+            />
+            <CardContent sx={{ textAlign: 'center', py: 2 }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                Project Walkthrough {index + 1}
+              </Typography>
+            </CardContent>
+          </Card>
+        </motion.div>
+      ))}
+    </Box>
+  </Container>
+</Box>
+
     </Box>
   );
 };
