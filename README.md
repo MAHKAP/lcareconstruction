@@ -1,4 +1,4 @@
-# Construct Pro - Civil Construction Company Website
+# L Care - Civil Construction Company Website
 
 A modern, responsive website for a civil construction company built with React and Material-UI.
 
@@ -83,5 +83,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - your.email@example.com
+Your Name - mahendrakap@gmail.com
 Project Link: https://github.com/yourusername/construct-pro
